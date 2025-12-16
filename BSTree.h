@@ -106,10 +106,10 @@ class BSTree {
         }
         
         ~BSTree(){
-            nelem = 0; 
-            delete_cascade(root);
-            root = nullptr;
-        }
+           nelem = 0; 
+	   this->delete_cascade(root);
+	   root = nullptr;
+	}
 
         int size()const{
             return nelem;
